@@ -1,0 +1,5 @@
+nsml @ git+https://github.com/n-CLAIR/nsml-local@8927e5c6566bcba75a3792f5ab4606bc003ffe64
+opencv-contrib-python==4.7.0.72
+progressbar2==4.2.0
+pykitti==0.3.1
+Vapory==0.1.2
