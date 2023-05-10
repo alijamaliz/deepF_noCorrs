@@ -1,7 +1,6 @@
 """Contains network architectures"""
 import tensorflow as tf
-import tensorflow.contrib as tc
-import tensorflow.contrib.layers as tcl
+import tensorflow.compat.v1.layers as tcl
 from UCN.networks import UniversalCorrepondenceNetwork
 
 class HomographyNet(object):
@@ -43,7 +42,7 @@ class HomographyNet(object):
             return tf.layers.conv2d(
                     x, dim, ksizes, strides,
                     padding=padding, activation=activation,
-                    kernel_regularizer=tc.layers.l2_regularizer(scale=self.weight_decay))
+                    kernel_regularizer=tcl.l2_regularizer(scale=self.weight_decay))
         else:
             return tf.layers.conv2d(
                     x, dim, ksizes, strides,

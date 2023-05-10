@@ -1,6 +1,6 @@
 from layers import conv_spatial_transfo, inception
 import tensorflow as tf
-import tensorflow.contrib.layers as layers
+import tensorflow.compat.v1.layers as layers
 from layers import project_at_points, inception, knn
 
 

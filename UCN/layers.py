@@ -1,5 +1,5 @@
 import tensorflow as tf
-import tensorflow.contrib.layers as layers
+import tensorflow.compat.v1.layers as layers
 from spatial_transformer import transformer
 from tools import unravel_index
 
